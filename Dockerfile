@@ -15,6 +15,6 @@ RUN set -o allexport \
     && . ./fix_all_gotchas.sh \
     && set +o allexport \
     && python -m pip install --no-cache-dir git+https://github.com/dHannasch/cookiecutter.git@branch-to-run \
-    && python -m pip install --no-cache-dir git+https://github.com/dHannasch/python-cookiepatcher.git@allow-tab-complete-target-directory-name
+    && python -m pip install --no-cache-dir git+https://github.com/dHannasch/python-cookiepatcher.git@allow-tab-complete-target-directory-name \
     && . ./cleanup.sh
 
